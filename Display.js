@@ -26,4 +26,27 @@ class Display {
         this.imprimirValores();
     }
     /* "Finalizado"*/
+    computar(tipo) {
+        this.tipoOperacion !== 'igual' && this.calcular();
+        this.tipoOperacion = tipo;
+        this.valorAnterior = this.valorActual || this.valorAnterior;
+        this.valorActual = '';
+        this.imprimirValores();
+    }
+
+    agregarNumero(numero) {
+        if(numero === '.' && this.valorActual.includes('.')) return
+        this.valorActual = this.valorActual.toString() + numero.toString();
+        this.imprimirValores();
+    }
+
+    imprimirValores() {
+        this.displayValorActual.textContent = this.valorActual;
+        this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
+
+
+
+
+
+}
 }
