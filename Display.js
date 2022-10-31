@@ -25,3 +25,5 @@ class Display {
         this.tipoOperacion = undefined;
         this.imprimirValores();
     }
+    /* "Finalizado"*/
+}
