@@ -43,10 +43,17 @@ class Display {
     imprimirValores() {
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
+    
+        calcular() {
+            const valorAnterior = parseFloat(this.valorAnterior);
+            /*Cambios en el codigo */
+
+
 
 
 
 
 
 }
+
 }
