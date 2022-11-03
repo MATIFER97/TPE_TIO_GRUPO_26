@@ -44,8 +44,14 @@ class Display {
         this.displayValorActual.textContent = this.valorActual;
         this.displayValorAnterior.textContent = `${this.valorAnterior} ${this.signos[this.tipoOperacion] || ''}`;
     
-        calcular() {
+        calcular() 
             const valorAnterior = parseFloat(this.valorAnterior);
+            const valorActual = parseFloat(this.valorActual);
+    
+            if( isNaN(valorActual)  || isNaN(valorAnterior) ) return
+            this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
+        }
+    }
             /*Cambios en el codigo */
 
 
@@ -56,4 +62,3 @@ class Display {
 
 }
 
-}
