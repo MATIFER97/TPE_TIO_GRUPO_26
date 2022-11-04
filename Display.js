@@ -53,9 +53,7 @@ class Display {
             this.valorActual = this.calculador[this.tipoOperacion](valorAnterior, valorActual);
         }
     }
-            /*Cambios en el codigo */
-            /*hola soy martina*/
-            /*Lo modifico por 2° vez*/
+            /*correccion final*/
 
 
 
