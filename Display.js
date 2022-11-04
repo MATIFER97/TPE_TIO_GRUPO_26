@@ -53,6 +53,8 @@ class Display {
         }
     }
             /*Cambios en el codigo */
+            /* reset*/
+            /* cambios/*
 
 
 
