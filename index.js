@@ -13,3 +13,4 @@ botonesOperadores.forEach(boton => {
     boton.addEventListener('click', () => display.computar(boton.value))
 });
 /*Finalizado index.js*/
+/*Revisar cambios*/
