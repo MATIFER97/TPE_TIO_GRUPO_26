@@ -1,3 +1,4 @@
+
 class Display {
     constructor(displayValorAnterior, displayValorActual) {
         this.displayValorActual = displayValorActual;
@@ -53,6 +54,7 @@ class Display {
         }
     }
             /*Cambios en el codigo */
+            /*hola soy martina*/
 
 
 
